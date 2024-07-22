@@ -1,0 +1,43 @@
+img{
+    margin: 0 auto;
+}
+body {
+    font-family: "Playfair Display", serif;
+    background-image: url(https://www.netscribes.com/wp-content/uploads/2021/10/banking-recovery-post-covid-19.jpg);
+    background-size: cover;
+}
+
+.registerbox{
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 470px;
+    width: 350px;
+    padding:20px ;
+    background-color: rgba(228, 225, 225, 0.504);
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0);
+}
+
+.registerbox p{
+    text-shadow: 2px 2px 3px black;
+    font-size: 50px;
+    color: rgb(61, 8, 120);
+    font-family: "Bona Nova SC", serif;
+}
+
+.registerbox label{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.registerbox input {
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    background-color: transparent;
+    box-shadow: inset 2px 1px 1px rgba(0, 0, 0, 0.651);
+}
+
+.registerbox button {
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 2px rgba(11, 80, 11, 0.674) ;
+}
