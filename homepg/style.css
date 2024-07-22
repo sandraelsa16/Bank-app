@@ -2,5 +2,16 @@ body {
     background-image: url(https://ichef.bbci.co.uk/images/ic/1200xn/p0f4jhp3.png);
     /* background-position: center; */
     background-size: cover;
+    font-family: "Bona Nova SC", serif;
 }
 
+.container{
+    background-color: rgba(248, 248, 255, 0.567);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+    font-family: "Bona Nova SC", serif;
+}
+
+.container:hover{
+    scale: 1.05;
+}

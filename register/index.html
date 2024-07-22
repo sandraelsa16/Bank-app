@@ -36,7 +36,7 @@
   </head>
   <body>
     <div class="row w-100">
-      <div class="col-3 d-flex justify-content-start">
+      <div class="col-6 d-flex">
         <button class="btn btn-lg">
           <i
             class="fa-solid fa-circle-arrow-left fa-2xl"
@@ -46,17 +46,20 @@
         <img
         src="../assets/bank logo.png"
         alt="bank-icon"
-        width="85px"
-        class="border border-dark"
+        width="80px" height="60px"
+        class="mt-2"
       />
-      <p class="fs-2 ">MY BANK</p>
+      <p class="fs-2 mt-4 fw-semibold">MY BANK</p>
+      </div>
+      <div class="col-6 d-flex justify-content-end align-items-center">
+        <button class=" btn btn-primary"><i class="fa-solid fa-user fa-fade" style="color: #ffffff"></i> Login</button>
       </div>
     </div>
 
     <div class="row w-100">
       <div class="col-4"></div>
       <div class="col-4 d-flex flex-column border border-secondary registerbox">
-        <p class="text-center">Register</p>
+        <p class="text-center heading">Register</p>
         <!-- <img src="../assets/bank logo.png" alt="" > -->
         <label for="" class="fs-4">Username :</label>
         <input type="text" class="form-control" placeholder="Username" />
@@ -68,6 +71,7 @@
         <input type="password" class="form-control" placeholder="Password" />
         <br />
         <button class="btn btn-success">Register</button>
+        <p class="text-center">Already existing User</p>
       </div>
       <div class="col-4"></div>
     </div>
