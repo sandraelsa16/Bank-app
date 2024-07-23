@@ -103,6 +103,7 @@ function withdrawal() {
 
 //logout
 document.getElementById("logoutbtn").addEventListener("click", function() {
+  localStorage.clear();
   window.location.href = "./index.html";
 });
 // function logout() {
