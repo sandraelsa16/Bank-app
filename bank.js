@@ -105,5 +105,5 @@ function withdrawal() {
 
 function logout() {
   localStorage.clear();
-  window.location = "./index.html";
+  window.location = "index.html";
 }
