@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>Register</title>
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,40 +34,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- script -->
+     <script src="bank.js" defer></script>
   </head>
   <body>
     <div class="row w-100">
-      <div class="col-3 d-flex justify-content-start">
-        <button class="btn btn-lg">
-          <i
-            class="fa-solid fa-circle-arrow-left fa-2xl"
-            style="color: #060606"
-          ></i>
-        </button>
+      <div class="col-6 d-flex">
         <img
-          src="../assets/bank logo.png"
-          alt="bank-icon"
-          width="85px"
-        />
-        <p class="fs-3 mt-4">MY BANK</p>
+        src="../assets/bank logo.png"
+        alt="bank-icon"
+        width="80px" height="60px"
+        class="mt-2"
+      />
+      <p class="fs-2 mt-4 fw-semibold">MY BANK</p>
       </div>
+      <div class="col-6 d-flex justify-content-end align-items-center">
+       
       </div>
     </div>
 
     <div class="row w-100">
       <div class="col-4"></div>
       <div class="col-4 d-flex flex-column border border-secondary registerbox">
-        <p class="text-center heading">Login In</p>
+        <p class="text-center heading">Register</p>
         <!-- <img src="../assets/bank logo.png" alt="" > -->
-        <br />
         <label for="" class="fs-4">Account Number :</label>
-        <input type="text" class="form-control " placeholder="Account Number" />
+        <input id="accno" type="text" class="form-control" placeholder="Account Number" />
+        <br />
+        <label for="" class="fs-4">Username :</label>
+        <input id="username" type="text" class="form-control" placeholder="Username" />
         <br />
         <label for="" class="fs-4">Password :</label>
-        <input type="password" class="form-control" placeholder="Password" />
+        <input id="pswd" type="password" class="form-control" placeholder="Password" />
         <br />
-        <button class="btn btn-success">Log In</button>
-        <p class="text-center"><a href="#">Forgot password</a> or <a href="../register/index.html">Sign Up</a></p>
+        <button class="btn btn-success" onclick="rgstr()">Register</button>
+        <p class="text-center mt-2">Already existing User</p>
+        <button class=" btn btn-primary" onclick="login()"><i class="fa-solid fa-user fa-fade" style="color: #ffffff"></i> Login</button>
       </div>
       <div class="col-4"></div>
     </div>
